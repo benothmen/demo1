@@ -17,9 +17,14 @@ class BlogController extends AbstractController
             'x' => 100
         ]);
     }
-    #[Route('/', name: 'home')]
-        public function home()
-        {
+    #[Route('/home', name: 'home')]
+    public function home(): Response
+    {
         return $this->render('blog/home.html.twig');
-        }
+    }
+    #[Route('/blog/12', name: 'blog_show')]
+    public function show()
+    {
+        return $this->render('blog/show.html.twig');
+    }
 }

@@ -1,20 +1,36 @@
 {% extends 'base.html.twig' %}
-
-{% block title %}Hello BlogController!{% endblock %}
-
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
-
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
-
-    {% for value in 0..x %}
-         {{value }}
-    {% endfor %}
-
-    
-</div>
+<div id="inserer">
+ici votre contenu exemple :
+<article>
+    <h2>Titre de l’Article </h2>
+    <div class="metadata">Edité le06/02/2022</div>
+    <div class="content">
+        <img src="" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur esse doloremque dolores, laborum perspiciatis ab.</p>
+        <p>Quia impedit atque quasi? Nesciunt suscipit rerum quos laborum deserunt nemo, aut atque minima quo!</p>
+        <a href="" class="btn btn-primary">Lire la suite</a>
+    </div>
+</article>
+<article>
+    <h2>Titre de l’Article </h2>
+    <div class="metadata">Edité le06/02/2022</div>
+    <div class="content">
+        <img src="" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut harum perferendis laborum, quasi quae qui!</p>
+        <p>Soluta, necessitatibus aliquam consequatur eos praesentium ipsum enim tempore doloremque similique animi voluptatem commodi voluptates.</p>
+        <a href="{{ path(route_name, route_parameters = [], relative = false) }}" class="btn btn-primary">Lire la suite</a>
+    </div>
+</article>
+<article>
+    <h2>Titre de l’Article </h2>
+    <div class="metadata">Edité le06/02/2022</div>
+    <div class="content">
+        <img src="" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae iste laboriosam, tenetur quisquam repellat ducimus.</p>
+        <p>Accusamus aliquam reprehenderit minus, aliquid placeat nulla doloremque facilis quasi corporis, vitae exercitationem, deserunt voluptas.</p>
+        <a href="" class="btn btn-primary">Lire la suite</a>
+    </div>
+</article>
+</div> 
 {% endblock %}
