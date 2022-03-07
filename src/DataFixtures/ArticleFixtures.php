@@ -2,7 +2,8 @@
 
 namespace App\DataFixtures;
 
-juse Doctrine\Bundle\FixturesBundle\Fixture;
+use app\Entity\Article;
+use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Persistence\ObjectManager;
 
 class ArticleFixtures extends Fixture
